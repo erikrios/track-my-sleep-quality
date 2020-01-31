@@ -1,8 +1,7 @@
-package com.erikriosetiawan
+package com.erikriosetiawan.trackmysleepquality
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
-import com.erikriosetiawan.trackmysleepquality.R
 import java.text.SimpleDateFormat
 
 /**
