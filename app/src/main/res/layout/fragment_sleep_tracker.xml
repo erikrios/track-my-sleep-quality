@@ -69,6 +69,7 @@
             android:layout_marginStart="@dimen/margin"
             android:layout_marginEnd="@dimen/margin"
             android:layout_marginBottom="@dimen/margin"
+            android:onClick="@{() -> sleepTrackerViewModel.onClear()}"
             android:text="@string/clear"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
