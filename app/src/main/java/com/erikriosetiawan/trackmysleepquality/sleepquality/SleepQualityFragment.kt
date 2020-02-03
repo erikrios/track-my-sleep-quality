@@ -46,6 +46,4 @@ class SleepQualityFragment : Fragment() {
 
         return binding.root
     }
-
-
 }
