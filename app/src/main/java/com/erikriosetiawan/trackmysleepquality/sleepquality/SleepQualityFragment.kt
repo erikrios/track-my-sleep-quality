@@ -3,14 +3,13 @@ package com.erikriosetiawan.trackmysleepquality.sleepquality
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-
 import com.erikriosetiawan.trackmysleepquality.R
 import com.erikriosetiawan.trackmysleepquality.database.SleepDatabase
 import com.erikriosetiawan.trackmysleepquality.databinding.FragmentSleepQualityBinding
@@ -36,7 +35,7 @@ class SleepQualityFragment : Fragment() {
         val viewModelFactory = SleepQualityViewModelFactory(arguments.sleepNightKey, dataSource)
         val sleepQualityViewModel =
             ViewModelProviders.of(this, viewModelFactory).get(SleepQualityViewModel::class.java)
-        binding.sleepQualityviewModel = sleepQualityViewModel
+        binding.sleepQualityViewModel = sleepQualityViewModel
 
         sleepQualityViewModel.navigateToSleepTracker.observe(this, Observer {
             if (it == true) { // Observed state is true.
